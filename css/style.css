@@ -1,0 +1,27 @@
+/* ------general--------- */
+@media screen and (min-width: 800px) {
+  div.container-main {
+    max-width: 93%;
+    margin: auto;
+  }
+}
+/* --------inicio maquetacion del nav-------- */
+nav {
+  font-size: 18px;
+}
+/* -------fin de maquetacion del nav--------- */
+
+/* ------------Inicio maquetacion del footer-------- */
+footer {
+  height: 45px;
+  width: 100%;
+  background-color: #789b9b;
+  /* background-color: #96bfbf; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* ------Fin maquetacion del footer---------- */

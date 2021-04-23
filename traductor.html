@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-main p-0">
+      <!-- ---------inicio del header y nav-------- -->
+
+      <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img style="width: 200px" src="./assets/logo.png" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Películas</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="divisas.html">Cotizar divisas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="traductor.html">Traductor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="estadisticas.html"
+                    >Estadísticas Covid</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- -----fin del header y nav-------- -->
+
+      <!-- ------------Inicio del main section-------- -->
+      <div class="container-fluid mt-4 mb-4">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-5 offset-1 offset-md-2">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma"
+                    id="idioma1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma1"
+                  >
+                    <img
+                      class="m-1 img-fluid"
+                      src="./assets/banderaital.png"
+                      style="width: 25px"
+                      alt=""
+                    />Italiano
+                  </label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma"
+                    id="idioma2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma2"
+                  >
+                    <img
+                      class="m-1"
+                      src="./assets/banderafran.png"
+                      style="width: 25px"
+                      alt=""
+                    />Frances
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-2 mt-md-0">
+            <div class="row">
+              <div class="offset-1 offset-md-0 col-5">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma"
+                    id="idioma3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma3"
+                  >
+                    <img
+                      class="m-1"
+                      src="./assets/banderaing.png"
+                      style="width: 25px"
+                      alt=""
+                    />Ingles
+                  </label>
+                </div>
+              </div>
+              <div class="o col-5">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma"
+                    id="idioma4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma4"
+                  >
+                    <img
+                      class="m-1"
+                      src="./assets/banderaesp.png"
+                      style="width: 25px"
+                      alt=""
+                    />
+                    Español
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-10 offset-1 mt-3">
+            <form action="">
+              <label for="exampleFormControlTextarea1" class="ps-3 form-label"
+                >Ingrese su texto:</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="5"
+                placeholder="Ingrese el texto a traducir..."
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn-lg btn-primary col-6 mt-3 offset-3"
+              >
+                Traducir
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- fin Botones del idioma de origen -->
+
+      <!-- Botones del idioma traducido -->
+      <div class="container-fluid mb-4 mt-4">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-5 offset-1 offset-md-2">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma-select"
+                    id="idioma-select1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma-select1"
+                  >
+                    <img
+                      class="m-1 img-fluid"
+                      src="./assets/banderaital.png"
+                      style="width: 25px"
+                      alt=""
+                    />Italiano
+                  </label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma-select"
+                    id="idioma-select2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma-select2"
+                  >
+                    <img
+                      class="m-1"
+                      src="./assets/banderafran.png"
+                      style="width: 25px"
+                      alt=""
+                    />Frances
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row mt-2 mt-md-0">
+              <div class="offset-1 offset-md-0 col-5">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma-select"
+                    id="idioma-select3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma-select3"
+                  >
+                    <img
+                      class="m-1"
+                      src="./assets/banderaing.png"
+                      style="width: 25px"
+                      alt=""
+                    />Ingles
+                  </label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="ps-3 pe-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="idioma-select"
+                    id="idioma-select4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-outline-primary d-flex justify-content-center"
+                    for="idioma-select4"
+                  >
+                    <img
+                      class="m-1"
+                      src="./assets/banderaesp.png"
+                      style="width: 25px"
+                      alt=""
+                    />
+                    Español
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-10 offset-1 mt-3">
+            <textarea
+              id="exampleFormControlTextarea1"
+              rows="5"
+              class="form-control"
+              type="text"
+              aria-label="Disabled input example"
+              disabled
+            ></textarea>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="col-3 offset-1 offset-sm-2">
+            <button class="btn">
+              <i class="bi bi-stickies fs-1 text-primary"></i>
+            </button>
+          </div>
+          <div class="col-4 ms-4">
+            <button class="btn">
+              <i class="bi bi-scissors fs-1 text-primary"></i>
+            </button>
+          </div>
+          <div class="col-2">
+            <button class="btn">
+              <i class="bi bi-x-square fs-1 text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin Botones del idioma traducido -->
+
+      <!-- --------fin del main section--------- -->
+
+      <!-- ---------Inicio del footer------------ -->
+
+      <footer class="bg-dark pt-3">
+        <p>Facultad de Ingeniería</p>
+        <p>contact@mail.com</p>
+      </footer>
+
+      <!-- ---------fin del footer--------- -->
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
